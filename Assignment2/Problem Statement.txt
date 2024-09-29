@@ -1,0 +1,35 @@
+Problem Statement: Library Management System
+
+Design and implement a Library Management System using Java, ensuring that your program demonstrates the four key OOP principles: encapsulation, inheritance, polymorphism, and abstraction.
+
+Requirements:
+
+1. Class Design (Abstraction & Encapsulation):
+   - Create a class `Book` that includes properties like `bookID`, `title`, `author`, `publicationYear`, and `status` (whether the book is available or checked out).
+     - Provide appropriate getter and setter methods to access and modify the properties of the book (encapsulation).
+   - Create a class `User` with attributes like `userID`, `name`, `email`, and `borrowedBooks` (a list of books that the user has borrowed).
+     - Use encapsulation for data protection with getter and setter methods.
+
+2. Inheritance:
+   - Implement two types of users: `Student` and `Librarian`, which should inherit from the `User` class.
+   - `Student` users can borrow a maximum of 5 books, while `Librarian` users have no borrowing limit. You should enforce these borrowing limits through the class design.
+
+3. Polymorphism:
+   - Use method overloading to allow different ways of searching for books, such as by `title`, `author`, or `publicationYear`.
+   - Implement method overriding in the `Student` and `Librarian` classes for borrowing and returning books. The method behavior should vary according to user type.
+   
+4. Additional Classes and Interfaces:
+   - Create a `Library` class that contains a list of `Book` objects and allows users to search for books, borrow, and return them.
+   - Implement an interface `Manageable` with methods for adding and removing books from the library. The `Library` class should implement this interface.
+
+5. Optional: Exception Handling and File I/O:
+   - Use custom exceptions like `BookNotAvailableException` or `MaxBorrowLimitReachedException` to handle situations like a user trying to borrow more than allowed or trying to borrow a book that is unavailable.
+   - Store library data in a file using file handling techniques and load it when the program starts.
+
+Expected Output:
+- The system should allow users to:
+  1. View available books.
+  2. Borrow and return books (with appropriate checks for user type and book availability).
+  3. Add or remove books (Librarian only).
+
+This problem covers all essential OOP concepts and provides scope for advanced features like exception handling and file I/O if desired.
